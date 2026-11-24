@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rati Mohanty – Developer, Designer, Entrepreneur</title>
+<meta name="description" content="Personal portfolio of Rati Mohanty: websites, software, product design and digital growth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,600;1,800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#151515;--bg2:#1C1C1C;--card:#212121;--y:#FFEC00;--t:#fff;--m:#929292;--b:#333;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--t);font:400 16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--y);outline-offset:3px}
+h1,h2,h3,.o{font-family:Oswald,'Bebas Neue',Impact,sans-serif;text-transform:uppercase;font-weight:700;line-height:1.1;margin:0}
+h2{font-size:clamp(34px,5.4vw,72px);letter-spacing:.005em}
+h1,h2{background:linear-gradient(180deg,#fff 35%,#8a8a8a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hl{display:inline-block;line-height:1.02;background:var(--y);color:#000;-webkit-text-fill-color:#000;padding:.06em .18em .02em;margin:.08em 0;border-radius:.14em}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:110px 0;position:relative}
+.alt{background:var(--bg2)}
+.k{color:var(--m)}
+.btn{display:inline-block;font:600 14px Inter;letter-spacing:.06em;text-transform:uppercase;padding:16px 36px;border-radius:999px;border:1px solid var(--y);background:var(--y);color:#000;cursor:pointer;transition:transform .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-3px)}
+.btn.g{background:transparent;color:var(--t);border-color:#555}
+.btn.g:hover{border-color:var(--y);color:var(--y)}
+.lead{color:var(--m);max-width:620px;font-size:18px}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+nav.s{background:rgba(21,21,21,.88);backdrop-filter:blur(10px);border-color:var(--b)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+nav .logo{font:600 24px/1 Poppins,Inter,sans-serif;letter-spacing:-.01em;color:#fff}nav .logo i{color:var(--y);font-weight:800;font-style:italic}footer b.lg{font:600 24px/1.2 Poppins,Inter,sans-serif;letter-spacing:-.01em}footer b.lg i{color:var(--y);font-weight:800}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+nav ul a{color:#ccc;transition:color .2s}nav ul a:hover{color:var(--y)}
+#mb{display:none;background:none;border:1px solid var(--b);color:#fff;padding:8px 12px;font:600 12px Inter;text-transform:uppercase}
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding:160px 0 90px;overflow:hidden;background:radial-gradient(ellipse 70% 55% at 75% 40%,rgba(255,236,0,.13),transparent 60%),radial-gradient(ellipse 50% 40% at 15% 90%,rgba(80,110,255,.1),transparent 60%),var(--bg)}
+.mons{position:absolute;right:-4%;top:14%;width:62%;height:68%;display:grid;grid-template-columns:1.1fr 1.6fr 1.1fr;gap:14px;transform:perspective(1200px) rotateY(-14deg);opacity:.55;pointer-events:none}
+.mons i{border:1px solid #3a3a3a;background:linear-gradient(160deg,#242424,#101010);position:relative;overflow:hidden}
+.mons i:nth-child(2){grid-row:span 2}
+.mons i::before{content:"";position:absolute;inset:14px;background:repeating-linear-gradient(0deg,rgba(255,236,0,.5) 0 3px,transparent 3px 14px);opacity:.35;-webkit-mask:linear-gradient(90deg,#000 55%,transparent);mask:linear-gradient(90deg,#000 55%,transparent)}
+.mons i:nth-child(3)::before{background:repeating-linear-gradient(0deg,rgba(150,190,255,.7) 0 3px,transparent 3px 11px)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(21,21,21,.5),rgba(21,21,21,.93) 85%)}
+.hero .w{position:relative;z-index:2;text-align:center}.hero .lead{margin:0 auto;color:#d0d0d0}
+.hero h1{font-size:clamp(46px,8.2vw,118px);margin:22px auto 26px;max-width:1000px}
+.eyebrow{font:500 13px Inter;letter-spacing:.2em;color:var(--y)}
+.cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin:36px 0 56px}
+.stats{display:flex;gap:44px;flex-wrap:wrap;border-top:1px solid var(--b);padding-top:26px;max-width:720px;margin:0 auto;justify-content:center}
+.stats b{display:block;font:700 40px Oswald;color:var(--y)}
+.stats span{font-size:13px;color:var(--m)}
+/* about */
+.ab{display:grid;grid-template-columns:5fr 7fr;gap:64px;margin-top:60px;align-items:start}
+.pt{aspect-ratio:4/5;background:linear-gradient(180deg,transparent 55%,#151515),radial-gradient(circle at 50% 35%,#3b3b3b,#1d1d1d 60%);border:1px solid var(--b);display:flex;align-items:flex-end;padding:20px;position:relative}
+.pt small{color:var(--m);font-size:12px}
+.pt b{position:absolute;top:18px;right:18px;background:var(--y);color:#000;padding:10px 14px;font:700 28px Oswald;line-height:1}
+.pt b span{display:block;font:600 10px Inter;letter-spacing:.1em}
+.ab p{color:#cfcfcf;margin:0 0 18px}
+.tl{margin-top:34px;border-left:1px solid var(--b);padding-left:24px}
+.tl div{position:relative;padding-bottom:20px}
+.tl div::before{content:"";position:absolute;left:-29px;top:8px;width:9px;height:9px;background:var(--y)}
+.tl b{font:600 15px Inter}.tl span{display:block;color:var(--m);font-size:14px}
+/* pillars */
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--b);margin-top:0}
+.tri article{padding:44px 34px;border-right:1px solid var(--b);background:var(--card)}
+.tri article:last-child{border:0}
+.tri h3{font-size:clamp(34px,4vw,54px);margin-bottom:18px}
+.tri article:nth-child(2){background:var(--y);color:#000}
+.tri article:nth-child(2) p{color:#222}
+.tri p{color:var(--m);margin:0;font-size:17px}
+/* expertise */
+.hd{margin-bottom:56px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--b);border-radius:16px;padding:32px;transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--y);transform:translateY(-4px)}
+.card svg{width:34px;height:34px;stroke:var(--y);fill:none;stroke-width:1.5;margin-bottom:22px}
+.card h3{font-size:24px;margin-bottom:14px}
+.card ul{margin:0;padding:0;list-style:none;color:var(--m);font-size:15px}
+.card li{padding:5px 0;border-top:1px solid #2b2b2b}
+/* work */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
+.tabs button{border-radius:99px;background:none;border:1px solid var(--b);color:var(--m);padding:10px 16px;font:500 13px Inter;cursor:pointer;transition:.2s}
+.tabs button:hover,.tabs button[aria-pressed=true]{background:var(--y);border-color:var(--y);color:#000}
+.pj{display:grid;grid-template-columns:1.25fr 1fr;gap:0;border:1px solid var(--b);border-radius:16px;overflow:hidden;background:var(--card);margin-bottom:20px}
+.pj:nth-child(even){grid-template-columns:1fr 1.25fr}
+.pj:nth-child(even) .th{order:2}
+.pj.hide{display:none}
+.th{min-height:300px;background:linear-gradient(135deg,#2a2a2a,#161616);position:relative;overflow:hidden}
+.th::before{content:attr(data-p);position:absolute;inset:0;display:grid;place-items:center;font:700 clamp(40px,6vw,84px) Oswald;color:#2d2d2d;text-transform:uppercase;text-align:center;line-height:1}
+.th::after{content:"Replace with project image";position:absolute;left:16px;bottom:12px;font-size:11px;color:#666}
+.pj>div:not(.th){padding:38px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.pj .c{color:var(--y);font-size:13px;font-weight:600}
+.pj h3{font-size:32px}.pj p{margin:0;color:var(--m)}
+.st{font-size:13px;color:#bbb}
+.lk{font-weight:600;font-size:14px;border-bottom:2px solid var(--y);align-self:flex-start;padding-bottom:2px}
+/* ventures */
+.biz{display:flex;flex-direction:column;justify-content:space-between;min-height:360px;padding:0;overflow:hidden}
+.biz .im{height:150px;background:linear-gradient(135deg,#2c2c2c,#191919);display:grid;place-items:center;font:700 36px Oswald;letter-spacing:.06em;color:var(--y)}
+.biz .bd{padding:28px;display:flex;flex-direction:column;gap:14px;flex:1}
+.biz p{margin:0;color:var(--m);flex:1}
+/* learn */
+.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:stretch}
+.pl{position:relative;border-radius:18px;background:var(--card);border:1px solid var(--b);padding:34px 26px 28px;display:flex;flex-direction:column;gap:16px}
+.pl .tag{font:600 12px Inter;letter-spacing:.1em;color:var(--m);text-transform:uppercase}
+.pl h3{font-size:26px}
+.pr{font:700 44px Oswald;color:var(--y);line-height:1}
+.pl ul{list-style:none;margin:0;padding:0;flex:1;color:#cfcfcf;font-size:15px}
+.pl li{padding:8px 0 8px 22px;border-top:1px solid #2d2d2d;position:relative}
+.pl li::before{content:"✓";color:var(--y);font-weight:700;position:absolute;left:0;top:8px}.pl.paid .pr::after{content:"One payment";font:600 12px Inter;color:var(--m);margin-left:10px}
+.pl.free{border-style:dashed}
+.pl.live{border-color:var(--y);box-shadow:0 0 50px rgba(255,236,0,.14)}
+.pl.paid{background:#262626}
+.slot{position:absolute;top:-13px;left:22px;background:var(--y);color:#000;border-radius:99px;font:600 12px Inter;padding:5px 14px}
+/* social */
+.soc{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.soc a{border:1px solid var(--b);padding:16px 26px;font:500 18px Oswald;letter-spacing:.06em;text-transform:uppercase;transition:.25s}
+.soc a:hover{background:var(--y);color:#000;border-color:var(--y)}
+/* contact */
+.ct{display:grid;grid-template-columns:5fr 7fr;gap:60px}
+.sv{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0}
+.sv span{border:1px solid var(--b);padding:8px 14px;font-size:14px;color:#ccc}
+.inf a{display:block;padding:10px 0;border-top:1px solid var(--b)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:var(--card);border:1px solid var(--b);padding:32px}
+label{font-size:13px;color:var(--m);display:flex;flex-direction:column;gap:6px}
+input,select,textarea{background:#151515;border:1px solid var(--b);color:#fff;padding:13px;font:16px Inter;width:100%;border-radius:0}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--y)}
+.f{grid-column:1/-1}
+#msg{grid-column:1/-1;font-size:14px;min-height:20px;color:var(--y)}
+/* final */
+.fin{padding:200px 0;text-align:center;background:radial-gradient(ellipse 60% 60% at 50% 100%,rgba(255,236,0,.2),transparent 70%),linear-gradient(#151515,#0e0e0e);overflow:hidden}
+.fin h2{font-size:clamp(40px,8vw,112px)}
+.fin p{font:500 20px Oswald;letter-spacing:.2em;text-transform:uppercase;color:var(--m);margin:30px 0 40px}
+footer{border-top:1px solid var(--b);padding:48px 0 36px;font-size:14px;color:var(--m)}
+footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px}
+footer b{font:700 22px Oswald;color:#fff;letter-spacing:.08em}
+footer nav{all:unset}
+footer .l{display:flex;gap:20px;flex-wrap:wrap}
+footer a:hover{color:var(--y)}
+.r{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.r.in{opacity:1;transform:none}
+.bar{display:block;background:var(--y);color:#000;text-align:center;font:500 13px Inter;padding:8px 12px}.bar b{background:#000;color:var(--y);font-size:10px;letter-spacing:.08em;padding:3px 7px;margin-right:10px;border-radius:4px}
+.sx{text-align:center}.sx s{display:block;font:700 clamp(34px,6vw,76px) Oswald;text-transform:uppercase;color:#6b6b6b;text-decoration-thickness:4px;line-height:1.15}.sx .lab{font:600 12px Inter;letter-spacing:.3em;color:var(--m);text-transform:uppercase;margin:30px 0 14px}.sx .big{font:700 clamp(70px,13vw,170px) Oswald;text-transform:uppercase;color:var(--y);line-height:1}.sx .lead{margin:18px auto 0;color:#ddd}
+.sp{display:grid;grid-template-columns:1fr 1fr}.sl{position:relative;min-height:760px;background-color:#1b1b1b;background-image:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.8)),url(https://res.cloudinary.com/dara80vtx/image/upload/v1795550846/8f5c7958-bdda-4fdd-a6a8-13e9e2b15d97_nctv16_c9fxsd.webp);background-size:cover;background-position:50% 0;background-repeat:no-repeat}.sl small{position:absolute;top:24px;left:28px;color:#777;font-size:12px}.sts{position:absolute;left:28px;right:28px;bottom:28px;display:flex;justify-content:space-between;gap:12px;font-size:13px}.sts b{display:block;font:700 clamp(30px,4vw,54px) Oswald;color:var(--y);line-height:1}
+.yp{background:linear-gradient(180deg,#FFEC00,#f2d800);color:#000;padding:100px 64px}.yp h2{background:none;-webkit-text-fill-color:#000;color:#000;font-size:clamp(32px,4vw,54px);margin-bottom:28px}.yp .hl{background:#000;color:var(--y);-webkit-text-fill-color:var(--y)}.yp p{color:#111;font-weight:500;margin:0 0 16px;max-width:560px}.vc{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}.vc div{background:#111;color:#bbb;border-radius:12px;padding:16px;font-size:13px}.vc b{display:block;color:var(--y);font:600 15px Inter;margin-bottom:4px}
+.bg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}.bg a{background:var(--card);border:1px solid var(--b);border-radius:14px;padding:22px 20px;display:flex;flex-direction:column;gap:6px;transition:.25s}.bg a:hover{border-color:var(--y);transform:translateY(-3px)}.bg b{font:700 22px Oswald;text-transform:uppercase;line-height:1.1}.bg span{font-size:13px;color:var(--m)}
+.two{grid-template-columns:repeat(2,1fr)}
+.sr{border-top:1px solid var(--b)}.sr:last-child{border-bottom:1px solid var(--b)}.sh{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:22px;padding:26px 4px;cursor:pointer;transition:color .2s,padding .3s}.sh:focus-visible{outline:2px solid var(--y)}.sh svg{width:30px;height:30px;stroke:var(--y);fill:none;stroke-width:1.5;flex:none}.sh span{font:700 clamp(26px,4.4vw,56px) Oswald;text-transform:uppercase;flex:1;line-height:1.1}.sh i{font:300 36px Inter;font-style:normal;color:var(--y);transition:transform .3s}.sr.open .sh i{transform:rotate(45deg)}.sh:hover{color:var(--y);padding-left:14px}.sb{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}.sr.open .sb{grid-template-rows:1fr}.sb>div{overflow:hidden}.ch{display:flex;flex-wrap:wrap;gap:10px;padding:0 4px 30px 52px}.ch em{font:500 14px Inter;font-style:normal;border:1px solid #444;border-radius:99px;padding:8px 16px;color:#ddd}
+#pjs{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:18px;scrollbar-width:thin;scrollbar-color:#444 transparent}#pjs .pj{flex:0 0 min(380px,82vw);display:flex;flex-direction:column;scroll-snap-align:start;margin:0}#pjs .pj .th{order:0;min-height:300px}#pjs .pj>div:not(.th){padding:26px}
+.arr{display:flex;justify-content:center;gap:16px;margin-top:18px}.arr button{width:46px;height:46px;border-radius:50%;background:none;border:1px solid #555;color:#fff;font-size:18px;cursor:pointer;transition:.2s}.arr button:hover{border-color:var(--y);color:var(--y)}
+.mq{display:grid;gap:14px;margin-top:10px;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}.mr{overflow:hidden}.mt{display:flex;width:max-content;animation:mq 45s linear infinite}.mt.rev{animation-direction:reverse}.mr:hover .mt{animation-play-state:paused}.mt a{flex:none;width:230px;margin-right:14px;background:var(--card);border:1px solid var(--b);border-radius:14px;padding:22px 20px;display:flex;flex-direction:column;gap:6px;transition:border-color .25s}.mt a:hover{border-color:var(--y)}.mt b{font:700 24px Oswald;text-transform:uppercase;line-height:1.1}.mt span{font-size:13px;color:var(--m)}@keyframes mq{to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.mt{animation:none}.mr{overflow-x:auto}}
+.plans{grid-template-columns:repeat(3,1fr)}
+#pjs .pj{position:relative;transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .45s}#pjs .pj::after{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--y);transition:width .5s;z-index:2}#pjs .pj:hover{transform:translateY(-10px);border-color:var(--y);box-shadow:0 24px 50px rgba(0,0,0,.55)}#pjs .pj:hover::after{width:100%}.th::before{transition:transform .7s cubic-bezier(.2,.8,.2,1),color .4s}#pjs .pj:hover .th::before{transform:scale(1.18);color:#454545}.pj .lk{transition:color .3s}.pj .lk::after{content:"→";display:inline-block;margin-left:8px;transition:transform .3s}#pjs .pj:hover .lk{color:var(--y)}#pjs .pj:hover .lk::after{transform:translateX(7px)}
+.hero::before{content:"";position:absolute;inset:-20%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(circle at 30% 40%,rgba(255,236,0,.17),transparent 35%),radial-gradient(circle at 75% 60%,rgba(90,130,255,.15),transparent 38%),radial-gradient(circle at 55% 18%,rgba(255,236,0,.09),transparent 30%);animation:drift 16s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate(-5%,-3%) scale(1)}to{transform:translate(6%,4%) scale(1.18)}}
+.mons{animation:flt 9s ease-in-out infinite alternate}@keyframes flt{from{transform:perspective(1200px) rotateY(-14deg) translateY(0)}to{transform:perspective(1200px) rotateY(-9deg) translateY(-16px)}}
+.mons i::before{animation:scan 7s linear infinite}.mons i:nth-child(even)::before{animation-direction:reverse}@keyframes scan{to{background-position:0 154px}}
+@media(prefers-reduced-motion:reduce){.hero::before,.mons,.mons i::before{animation:none}}
+#bgc{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:64px 64px;-webkit-mask:radial-gradient(ellipse at 50% 45%,#000,transparent 75%);mask:radial-gradient(ellipse at 50% 45%,#000,transparent 75%);animation:grid 10s linear infinite}@keyframes grid{to{background-position:0 64px,0 0}}
+.hero::before{content:"";position:absolute;inset:-35%;z-index:1;pointer-events:none;transform-origin:50% 0;background:conic-gradient(from 195deg at 50% 0,transparent 0deg,rgba(255,255,255,.08) 12deg,transparent 28deg,transparent 42deg,rgba(255,255,255,.06) 54deg,transparent 70deg);animation:beam 14s ease-in-out infinite alternate}@keyframes beam{from{transform:rotate(-9deg)}to{transform:rotate(9deg)}}
+.mons{display:none}#bgc{display:none}
+.mons,.mons i::before{animation:none!important}@media(prefers-reduced-motion:reduce){#bgc{animation:none}}
+.note{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;background:var(--y);color:#000;border-radius:16px;padding:22px 28px;margin:-24px 0 48px;font:500 18px/1.45 Inter}.note b{font:700 clamp(22px,3vw,30px) Oswald;text-transform:uppercase;line-height:1.1}.note span{flex:1 1 320px}
+.sx .cx{display:block;position:relative;width:max-content;max-width:100%;margin:0 auto;font:700 clamp(32px,7vw,76px) Oswald;text-transform:uppercase;line-height:1.15;color:#fff;transition:color .5s}.sx .cx::after{content:"";position:absolute;left:-2%;right:-2%;top:56%;height:5px;background:var(--y);transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.7,0,.2,1)}.sx.go .cx{color:#6b6b6b}.sx.go .cx::after{transform:scaleX(1)}.sx.go .d2,.sx.go .d2::after{transition-delay:.8s}.sx.go .d3,.sx.go .d3::after{transition-delay:1.6s}
+.sx .l2{opacity:0;transition:opacity .5s 2.3s}.sx.go .l2{opacity:1}.sx .big{opacity:0;transform:scale(.4)}.sx.go .big{animation:pop .8s 2.7s cubic-bezier(.2,1.4,.4,1) forwards}@keyframes pop{0%{opacity:0;transform:scale(.4)}60%{opacity:1;transform:scale(1.14)}100%{opacity:1;transform:scale(1)}}.sx .lead{opacity:0;transition:opacity .6s 3.3s}.sx.go .lead{opacity:1}
+@media(prefers-reduced-motion:reduce){.sx .cx{color:#6b6b6b}.sx .cx::after{transform:none;transition:none}.sx .big,.sx .l2,.sx .lead{opacity:1;transform:none;animation:none!important;transition:none}}
+@media(max-width:980px){
+ .plans,.grid3{grid-template-columns:1fr 1fr}.tri{grid-template-columns:1fr}.tri article{border-right:0;border-bottom:1px solid var(--b)}
+ .sp,.ab,.ct,.pj,.pj:nth-child(even){grid-template-columns:1fr}.sl{min-height:520px}.yp{padding:64px 24px}.pj:nth-child(even) .th{order:0}.th{min-height:220px}.mons{opacity:.3;width:90%}
+}
+@media(max-width:700px){
+ nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#151515;padding:20px 24px;border-bottom:1px solid var(--b)}
+ nav ul.o{display:flex}#mb{display:block}
+ .plans,.grid3,form,.vc{grid-template-columns:1fr}section{padding:76px 0}.fin{padding:120px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.r{opacity:1;transform:none;transition:none}}
+@media(max-width:1000px){.plans{grid-template-columns:1fr;max-width:560px;margin:0 auto}.hero{min-height:auto}}
+@media(max-width:700px){.w{padding:0 18px}.bar{font-size:12px;padding:7px 10px;line-height:1.35}nav .w{height:56px}nav .logo{font-size:20px}.btn{padding:15px 26px}.hero{padding:140px 0 70px}.hero h1{font-size:clamp(38px,11.5vw,56px)}.lead{font-size:16px}.cta .btn{width:100%;text-align:center}.stats{gap:22px}.stats b{font-size:32px}h2{font-size:clamp(30px,9vw,44px)}.sx s{font-size:clamp(30px,10vw,46px)}.sx .big{font-size:clamp(56px,19vw,96px)}.sl{min-height:440px}.sts{left:16px;right:16px;bottom:18px;font-size:11px}.sts b{font-size:28px}.yp{padding:48px 20px}.tri article{padding:32px 22px}.sh{gap:14px;padding:20px 2px}.sh svg{width:24px;height:24px}.ch{padding:0 2px 24px}#pjs .pj{flex-basis:84vw}#pjs .pj .th{min-height:220px}.mt a{width:170px;padding:16px 14px}.mt b{font-size:20px}.pl{padding:30px 20px 24px}.pr{font-size:38px}form{padding:20px}.soc a{padding:12px 18px;font-size:16px}.fin h2{font-size:clamp(34px,10vw,52px)}footer .w{flex-direction:column}}
+</style>
+</head>
+<body>
+<nav id="nav"><a class="bar" href="#learn"><b>NEW</b>2-month website courses. Enroll now.</a><div class="w"><a class="logo" href="#top" aria-label="Rati Mohanty, home"><i>Rati</i> Mohanty</a>
+<button id="mb" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul id="menu"><li><a href="#about">About</a></li><li><a href="#expertise">Services</a></li><li><a href="#work">My Work</a></li><li><a href="#businesses">Businesses</a></li><li><a href="#learn">Learn</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero" id="top">
+<canvas id="bgc" aria-hidden="true"></canvas>
+<div class="mons" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+<div class="w">
+<div class="eyebrow">DEVELOPER • DESIGNER • ENTREPRENEUR</div>
+<h1>I build digital experiences that <span class="hl">stand out.</span></h1>
+<p class="lead">Hey, I’m Rati. I build websites, software and products, and I help turn your idea into something real people can actually use.</p>
+<div class="cta"><a class="btn" href="#work">Explore my work</a><a class="btn g" href="#contact">Let’s work together</a></div>
+<div class="stats"><div><b>8+</b><span>Years of Experience</span></div><div><b>250+</b><span>Projects Delivered</span></div><div><b>Many</b><span>Businesses &amp; Products</span></div></div>
+</div></header>
+
+<main>
+<section class="sx alt"><div class="w">
+<h2 class="r">Anyone can put up a page.<br>Making it actually work? That’s the real job.</h2>
+<div class="lab">What used to set you apart</div>
+<span class="cx d1">Templates</span><span class="cx d2">Page builders</span><span class="cx d3">Quick mockups</span>
+<div class="lab l2">Now one prompt away</div>
+<div class="big">Building</div>
+<p class="lead">That’s the part I love: turning an idea into something real.</p>
+</div></section>
+<section id="about" style="padding:0"><div class="sp">
+<div class="sl" role="img" aria-label="Portrait of Rati Mohanty"><div class="sts"><div><b>8+</b>Years of experience</div><div><b>250+</b>Projects delivered</div><div><b>3</b>Own ventures</div></div></div>
+<div class="yp"><h2 class="r">More than just a developer.<br>I’m a <span class="hl">builder of ideas.</span></h2>
+<p>Hi, I’m Rati Mohanty. I’m a developer, a product designer and an entrepreneur, and I’ve been in the digital world for over 8 years now.</p>
+<p>It all started with YouTube and making content. That’s where I learned how powerful the internet is for creating things and building an audience. My curiosity kept pulling me toward tech, and slowly I got into building websites and software, designing UI/UX, doing SEO, and running digital businesses.</p>
+<p>These days I work across a bunch of areas in tech, and I help businesses turn their ideas into real digital products.</p>
+<p>Whether it’s a simple website or a big software platform, I just love building things that solve real problems.</p>
+<div class="vc"><div><b>YouTube &amp; content</b>Platforms, creativity, audiences.</div><div><b>Websites &amp; software</b>Development, UI/UX and SEO.</div><div><b>Today</b>Products, ventures, teaching.</div></div>
+</div></div></section>
+
+<section class="alt" style="padding:0"><div class="tri">
+<article class="r"><h3>My Passion</h3><p>I love building things from scratch and turning ideas into products. I’m always playing with tech, creativity, automation and new ideas.</p></article>
+<article class="r"><h3>My Vision</h3><p>I want technology to feel easy for everyone, so businesses and people like you can grow with it.</p></article>
+<article class="r"><h3>My Goal</h3><p>I want to build products that matter, grow my businesses, share what I’ve learned, and inspire the next wave of creators and developers.</p></article>
+</div></section>
+
+<section id="expertise"><div class="w">
+<h2 class="hd r">From ideas to execution.<br>I <span class="hl">make things happen.</span></h2>
+<div class="svc" id="ex"></div></div></section>
+
+<section class="alt" id="work"><div class="w">
+<h2 class="hd r">250+ projects.<br>Countless ideas <span class="hl">brought to life.</span></h2>
+<div id="pjs"></div>
+<div class="arr"><button id="pp" aria-label="Previous projects">←</button><button id="pn" aria-label="Next projects">→</button></div>
+<p style="text-align:center;margin-top:36px"><a class="btn g" href="#" data-edit="all-projects-url">View all projects</a></p>
+</div></section>
+
+<section id="businesses"><div class="w">
+<h2 class="hd r">Serial entrepreneur.<br>I’m building <span class="hl">my own brands.</span></h2></div>
+<div class="mq" id="mq"></div></section>
+
+
+<section class="alt" id="learn"><div class="w">
+<h2 class="r">You don’t need to know everything.<br>You just need to <span class="hl">start.</span></h2>
+<p class="lead r" style="margin:26px 0 56px">Honestly, anyone can learn tech if someone shows them the way. I want to make real, practical digital skills easy for beginners, business owners and anyone who wants to create.</p>
+<div class="note r"><b>No coding needed.</b><span>Not from a tech background? No problem. You can learn from me even if you’ve never touched code, or want to learn something non-tech.</span></div>
+<div class="plans">
+<article class="pl paid r"><span class="tag">Plan 01 · 2-month course</span><h3>No-code</h3><div class="pr">₹2,999</div><ul><li>Build websites without coding.</li><li>Understand website structure.</li><li>Learn practical website creation.</li><li>Build and publish a website.</li><li>Beginner-friendly training.</li></ul><a class="btn" href="#contact">Enroll now</a></article>
+<article class="pl live paid r"><span class="tag">Plan 02 · 2-month course</span><h3>Code + no-code</h3><div class="pr">₹3,499</div><ul><li>Build websites without coding.</li><li>Learn website development.</li><li>Understand website structure.</li><li>Build and publish a website.</li></ul><a class="btn" href="#contact">Enroll now</a></article>
+<article class="pl paid r"><span class="tag">Plan 03 · 2-month course</span><h3>Website + e-commerce</h3><div class="pr">₹4,499</div><ul><li>Learn website development.</li><li>Build business websites.</li><li>Create e-commerce stores.</li><li>Understand product management.</li><li>Learn payment gateway integration.</li><li>Learn website publishing and deployment.</li></ul><a class="btn" href="#contact">Enroll now</a></article>
+</div></div></section>
+
+<section id="social"><div class="w">
+<h2 class="r">Let’s connect <span class="hl">beyond the screen.</span></h2>
+<p class="lead r" style="margin-top:22px">I share my journey, my ideas, my experiments and everything I’m building as I go. Come hang out.</p>
+<div class="soc" id="soc"></div></div></section>
+
+<section class="alt" id="contact"><div class="w ct">
+<div class="r"><h2>Have an idea?<br>Let’s build <span class="hl">something great.</span></h2>
+<p class="lead" style="margin-top:22px">Whether you’re a startup, a business owner or just someone with a big idea, tell me about it and let’s make it happen.</p>
+<div class="sv"><span>Website Development</span><span>Custom Software Development</span><span>UI/UX &amp; Product Design</span><span>E-commerce Development</span><span>AI &amp; Automation</span><span>SEO &amp; Digital Growth</span></div>
+<div class="inf"><a href="mailto:hello@example.com" data-edit="email">hello@example.com</a><a href="https://wa.me/910000000000" data-edit="whatsapp">WhatsApp: +91 00000 00000</a></div></div>
+<form id="f" class="r">
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+<label>Company / Business<input name="company"></label>
+<label class="f">What do you want to build?<select name="service"><option>Website Development</option><option>Custom Software Development</option><option>UI/UX &amp; Product Design</option><option>E-commerce Development</option><option>AI &amp; Automation</option><option>SEO &amp; Digital Growth</option></select></label>
+<label class="f">Project budget<input name="budget"></label>
+<label class="f">Project description<textarea name="details" rows="4" required></textarea></label>
+<button class="btn f" type="submit">Let’s talk about your project</button><div id="msg" role="status"></div>
+</form></div></section>
+
+<section class="fin"><div class="w"><h2 class="r">Your next <span class="hl">big idea</span><br>deserves to be built.</h2><p>Think it. Design it. Build it. Launch it.</p><a class="btn" href="#contact">Start a project</a></div></section>
+</main>
+
+<footer><div class="w"><div><b class="lg"><i>Rati</i> Mohanty</b><br>Developer | Designer | Entrepreneur<br><br>© 2026 Rati Mohanty. All Rights Reserved.</div>
+<div><div class="l"><a href="#about">About</a><a href="#work">Work</a><a href="#businesses">Businesses</a><a href="#learn">Learn</a><a href="#contact">Contact</a></div><div class="l" id="fs" style="margin-top:16px"></div></div></div></footer>
+
+<script>
+// ===== EDIT ME =====
+var FORM_ENDPOINT=""; // e.g. "https://formspree.io/f/xxxx" or your API URL
+var SOCIAL={LinkedIn:"#",Instagram:"#",YouTube:"#",Facebook:"#",GitHub:"#",X:"#","Personal Website":"#"};
+var BRANDS=[ // set url for each brand
+ {n:"Dum Dynasty",u:"#"},{n:"Groo.online",u:"#"},{n:"YouTube",t:"Channel",u:"#"},{n:"ZaiyoTech",u:"#"},{n:"Tabletop",u:"#"},{n:"Regelance",u:"#"},{n:"Yelko",u:"#"},{n:"Delhi Butter Chicken",u:"#"},{n:"DQN Society",u:"#"},{n:"TechoGames",u:"#"},{n:"Watch This",t:"YouTube channel",u:"#"},{n:"ProductGig",u:"#"},{n:"OvrWeb",u:"#"},{n:"AssetBill",u:"#"},{n:"Food District",u:"#"}];
+var CATS=["Websites","Web Applications","Software & SaaS","E-commerce","UI/UX & Product Design","SEO & Digital Growth"];
+var PROJECTS=[ // replace names, stacks, links, images (th:"image-url")
+ {n:"Project Name 01",c:"Websites",d:"Short description of the project goes here.",s:"WordPress · Elementor",u:"#",th:""},
+ {n:"Project Name 02",c:"Web Applications",d:"Short description of the project goes here.",s:"React · Node.js · MongoDB",u:"#",th:""},
+ {n:"Project Name 03",c:"Software & SaaS",d:"Short description of the project goes here.",s:"MERN · PostgreSQL",u:"#",th:""},
+ {n:"Project Name 04",c:"E-commerce",d:"Short description of the project goes here.",s:"Shopify · WooCommerce",u:"#",th:""},
+ {n:"Project Name 05",c:"UI/UX & Product Design",d:"Short description of the project goes here.",s:"Figma · Prototyping",u:"#",th:""},
+ {n:"Project Name 06",c:"SEO & Digital Growth",d:"Short description of the project goes here.",s:"Technical SEO · Analytics",u:"#",th:""}];
+var EX=[
+ ["Website Development","M3 5h18v14H3zM3 9h18","WordPress|Shopify|WooCommerce|Next.js|React"],
+ ["Software Development","M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14","MERN Stack|Node.js|MongoDB|PostgreSQL|Custom CRM & ERP"],
+ ["UI/UX & Product Design","M4 20l4-1 11-11-3-3L5 16zM14 6l3 3","Figma|Wireframing|Prototyping|Product Strategy|User Experience"],
+ ["SEO & Digital Growth","M4 19V9M10 19V5M16 19v-7M22 19H2","Technical SEO|On-page SEO|Website Optimization|Digital Strategy"],
+ ["AI & Automation","M12 3v3M12 18v3M3 12h3M18 12h3M7 7l2 2M15 15l2 2M17 7l-2 2M9 15l-2 2","AI-powered Applications|Business Automation|Workflow Automation|API Integrations"],
+ ["Cloud & Infrastructure","M7 18a4 4 0 010-8 5 5 0 019.6-1A4.5 4.5 0 0117 18z","AWS|Google Cloud|Cloud Deployment|Server Management"]];
+// ===================
+var $=function(i){return document.getElementById(i)};
+$("ex").innerHTML=EX.map(function(e,i){return'<div class="sr r'+(i?'':' open')+'"><button class="sh" aria-expanded="'+(!i)+'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="'+e[1]+'"/></svg><span>'+e[0].replace("&","&amp;")+'</span><i aria-hidden="true">+</i></button><div class="sb"><div><div class="ch">'+e[2].split("|").map(function(x){return"<em>"+x.replace("&","&amp;")+"</em>"}).join("")+'</div></div></div></div>'}).join("");
+$("ex").addEventListener("click",function(e){var h=e.target.closest(".sh");if(!h)return;var r=h.parentNode,o=r.classList.contains("open");document.querySelectorAll(".sr").forEach(function(x){x.classList.remove("open");x.firstChild.setAttribute("aria-expanded","false")});if(!o){r.classList.add("open");h.setAttribute("aria-expanded","true")}});
+$("pn").onclick=function(){$("pjs").scrollBy({left:400,behavior:"smooth"})};$("pp").onclick=function(){$("pjs").scrollBy({left:-400,behavior:"smooth"})};
+function draw(cat){
+ $("pjs").innerHTML=PROJECTS.filter(function(p){return!cat||cat==="All"||p.c===cat}).map(function(p){
+  return'<article class="pj r in"><div class="th" data-p="'+p.n+'"'+(p.th?' style="background:url('+p.th+') center/cover"':'')+'></div><div><span class="c">'+p.c.replace("&","&amp;")+'</span><h3>'+p.n+'</h3><p>'+p.d+'</p><span class="st">'+p.s+'</span><a class="lk" href="'+p.u+'">View project</a></div></article>'}).join("")}
+draw();
+
+var s="";for(var k in SOCIAL)s+='<a href="'+SOCIAL[k]+'" rel="noopener" target="_blank">'+k+'</a>';
+$("soc").innerHTML=s;$("fs").innerHTML=Object.keys(SOCIAL).map(function(k){return'<a href="'+SOCIAL[k]+'">'+k+'</a>'}).join("");
+var mqh=function(a){var h=a.map(function(b){return'<a href="'+b.u+'" rel="noopener"><b>'+b.n+'</b><span>'+(b.t||'Visit website')+'</span></a>'}).join("");return'<div class="mr"><div class="mt">'+h+h+'</div></div>'};var half=Math.ceil(BRANDS.length/2);
+$("mq").innerHTML=mqh(BRANDS.slice(0,half))+mqh(BRANDS.slice(half)).replace('class="mt"','class="mt rev"');
+(function(){var c=$("bgc"),x=c.getContext("2d"),P=[],W=0,H=0,m={x:-999,y:-999},G=["{ }","</>","0","1","=>",";","( )","#"],rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function rs(){var d=devicePixelRatio||1,r=c.parentNode.getBoundingClientRect();W=r.width;H=r.height;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);var n=Math.min(70,Math.floor(W*H/22000));P=[];for(var i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,g:Math.random()<.35?G[i%G.length]:null,s:10+Math.random()*10})}
+function f(){x.clearRect(0,0,W,H);for(var i=0;i<P.length;i++){var p=P[i];p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;var dx=p.x-m.x,dy=p.y-m.y,d=Math.sqrt(dx*dx+dy*dy);if(d>0&&d<140){p.x+=dx/d*1.2;p.y+=dy/d*1.2}
+if(p.g){x.fillStyle="rgba(255,236,0,.45)";x.font="600 "+p.s+"px Inter,monospace";x.fillText(p.g,p.x,p.y)}else{x.fillStyle="rgba(255,236,0,.7)";x.beginPath();x.arc(p.x,p.y,1.6,0,6.3);x.fill()}
+for(var j=i+1;j<P.length;j++){var q=P[j],a=p.x-q.x,b=p.y-q.y,e=a*a+b*b;if(e<14000){x.strokeStyle="rgba(255,236,0,"+(.16*(1-e/14000))+")";x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}}
+if(!rm)requestAnimationFrame(f)}
+rs();/*particles off*/addEventListener("resize",rs);c.parentNode.addEventListener("mousemove",function(e){var r=c.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});c.parentNode.addEventListener("mouseleave",function(){m.x=m.y=-999})})();
+var sx=document.querySelector(".sx");new IntersectionObserver(function(e,o){if(e[0].isIntersecting){sx.classList.add("go");o.disconnect()}},{threshold:.35}).observe(sx);
+$("mb").onclick=function(){var o=$("menu").classList.toggle("o");this.setAttribute("aria-expanded",o)};
+$("menu").onclick=function(){this.classList.remove("o")};
+addEventListener("scroll",function(){$("nav").classList.toggle("s",scrollY>40)},{passive:true});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll(".r").forEach(function(el){io.observe(el)});
+$("f").onsubmit=function(e){e.preventDefault();var m=$("msg"),d=Object.fromEntries(new FormData(this));
+ if(!FORM_ENDPOINT){m.textContent="Form is not connected yet. Set FORM_ENDPOINT in the script.";return}
+ m.textContent="Sending…";
+ fetch(FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(d)})
+ .then(function(r){if(!r.ok)throw 0;m.textContent="Thanks. Your message was sent.";$("f").reset()})
+ .catch(function(){m.textContent="Could not send. Please email or WhatsApp instead."})};
+</script>
+</body>
+</html>
