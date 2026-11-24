@@ -6,7 +6,7 @@
 <title>Rati Mohanty – Developer, Designer, Entrepreneur</title>
 <meta name="description" content="Personal portfolio of Rati Mohanty: websites, software, product design and digital growth.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,600;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,600;1,800&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#151515;--bg2:#1C1C1C;--card:#212121;--y:#FFEC00;--t:#fff;--m:#929292;--b:#333;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *,*::before,*::after{box-sizing:inherit}
@@ -37,7 +37,7 @@ nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:13px;l
 nav ul a{color:#ccc;transition:color .2s}nav ul a:hover{color:var(--y)}
 #mb{display:none;background:none;border:1px solid var(--b);color:#fff;padding:8px 12px;font:600 12px Inter;text-transform:uppercase}
 /* hero */
-.hero{min-height:100vh;display:flex;align-items:center;padding:160px 0 90px;overflow:hidden;background:radial-gradient(ellipse 70% 55% at 75% 40%,rgba(255,236,0,.13),transparent 60%),radial-gradient(ellipse 50% 40% at 15% 90%,rgba(80,110,255,.1),transparent 60%),var(--bg)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:160px 0 90px;overflow:hidden;background:radial-gradient(ellipse 50% 40% at 15% 90%,rgba(80,110,255,.1),transparent 60%),var(--bg)}
 .mons{position:absolute;right:-4%;top:14%;width:62%;height:68%;display:grid;grid-template-columns:1.1fr 1.6fr 1.1fr;gap:14px;transform:perspective(1200px) rotateY(-14deg);opacity:.55;pointer-events:none}
 .mons i{border:1px solid #3a3a3a;background:linear-gradient(160deg,#242424,#101010);position:relative;overflow:hidden}
 .mons i:nth-child(2){grid-row:span 2}
@@ -165,6 +165,23 @@ footer a:hover{color:var(--y)}
 .sx .cx{display:block;position:relative;width:max-content;max-width:100%;margin:0 auto;font:700 clamp(32px,7vw,76px) Oswald;text-transform:uppercase;line-height:1.15;color:#fff;transition:color .5s}.sx .cx::after{content:"";position:absolute;left:-2%;right:-2%;top:56%;height:5px;background:var(--y);transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.7,0,.2,1)}.sx.go .cx{color:#6b6b6b}.sx.go .cx::after{transform:scaleX(1)}.sx.go .d2,.sx.go .d2::after{transition-delay:.8s}.sx.go .d3,.sx.go .d3::after{transition-delay:1.6s}
 .sx .l2{opacity:0;transition:opacity .5s 2.3s}.sx.go .l2{opacity:1}.sx .big{opacity:0;transform:scale(.4)}.sx.go .big{animation:pop .8s 2.7s cubic-bezier(.2,1.4,.4,1) forwards}@keyframes pop{0%{opacity:0;transform:scale(.4)}60%{opacity:1;transform:scale(1.14)}100%{opacity:1;transform:scale(1)}}.sx .lead{opacity:0;transition:opacity .6s 3.3s}.sx.go .lead{opacity:1}
 @media(prefers-reduced-motion:reduce){.sx .cx{color:#6b6b6b}.sx .cx::after{transform:none;transition:none}.sx .big,.sx .l2,.sx .lead{opacity:1;transform:none;animation:none!important;transition:none}}
+.sx{position:relative;overflow:hidden}.sx .w{position:relative;z-index:1}.sx::before,.sx::after{content:"";position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;opacity:0;transition:opacity 1.5s}.sx::before{width:420px;height:420px;left:6%;top:10%;background:rgba(255,255,255,.05);animation:orb1 14s ease-in-out infinite alternate}.sx::after{width:480px;height:480px;right:4%;bottom:4%;background:rgba(90,130,255,.13);animation:orb2 17s ease-in-out infinite alternate}.sx.go::before,.sx.go::after{opacity:1}@keyframes orb1{to{transform:translate(140px,90px) scale(1.25)}}@keyframes orb2{to{transform:translate(-150px,-70px) scale(1.15)}}
+.sx .big{position:relative;display:inline-block}.sx .big::before,.sx .big::after{content:attr(data-t);position:absolute;inset:0;z-index:-1;color:transparent;-webkit-text-stroke:2px rgba(255,236,0,.55);opacity:0}.sx.go .big::before{animation:echo 2.6s 3.4s ease-out infinite}.sx.go .big::after{animation:echo 2.6s 4.7s ease-out infinite}@keyframes echo{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(1.7)}}
+.sx.go .big{animation:pop .8s 2.7s cubic-bezier(.2,1.4,.4,1) forwards,glow 3s 3.6s ease-in-out infinite}@keyframes glow{0%,100%{text-shadow:0 0 0 rgba(255,236,0,0)}50%{text-shadow:0 0 44px rgba(255,236,0,.5)}}
+@media(prefers-reduced-motion:reduce){.sx::before,.sx::after,.sx .big::before,.sx .big::after{animation:none!important}.sx .big{animation:none!important}}
+.sx .big::before,.sx .big::after{display:none}.sx.go .big{animation:fadepop 1.1s 2.7s ease-out forwards}@keyframes fadepop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:scale(1)}}
+#bgc{display:block;inset:-15%;width:130%;height:130%;-webkit-mask:none;mask:none;background:radial-gradient(circle at 78% 62%,rgba(90,130,255,.15),transparent 38%);animation:drift 14s ease-in-out infinite alternate}
+.hero .w>*{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}.hero .w>:nth-child(2){animation-delay:.15s}.hero .w>:nth-child(3){animation-delay:.3s}.hero .w>:nth-child(4){animation-delay:.45s}.hero .w>:nth-child(5){animation-delay:.6s}@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.hero .hl{animation:wipe .9s .9s cubic-bezier(.7,0,.2,1) both}@keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.hero .cta .btn:not(.g){animation:pulse 2.8s 2s infinite}@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,236,0,.45)}70%,100%{box-shadow:0 0 0 18px rgba(255,236,0,0)}}
+@media(prefers-reduced-motion:reduce){.hero .w>*,.hero .hl,.hero .cta .btn,#bgc{animation:none!important}.sx .big{animation:none!important}}
+.hw{padding:100px 0}.hw .w{max-width:900px}.hw .ln{position:relative;display:block;width:max-content;max-width:100%;font:700 clamp(22px,5vw,44px)/1.4 Caveat,"Segoe Script","Bradley Hand",cursive;color:#f2f2f2}.hw .ln.ti{font-size:clamp(56px,11vw,120px);line-height:1;color:#fff}.hw .ln.last{color:var(--y)}.hw .t{display:inline-block;clip-path:inset(-10% 100% -10% 0)}.hw.go .t{animation:reveal var(--du,1.6s) linear var(--d,0s) forwards}@keyframes reveal{to{clip-path:inset(-10% 0 -10% 0)}}
+.hw .pen{position:absolute;left:0;bottom:.05em;width:.85em;height:.85em;margin-left:-.05em;opacity:0;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 21l1.5-5L16 4.5 19.5 8 8 19.5z' fill='%23FFEC00' stroke='%23000' stroke-width='1'/%3E%3Cpath d='M3 21l1.5-5 3.5 3.5z' fill='%23fff' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") center/contain no-repeat;transform-origin:0 100%}.hw.go .pen{animation:penmove var(--du,1.6s) linear var(--d,0s) forwards,jig .22s ease-in-out infinite alternate}@keyframes penmove{0%{left:0;opacity:1}98%{left:100%;opacity:1}100%{left:100%;opacity:0}}@keyframes jig{from{transform:rotate(-8deg) translateY(0)}to{transform:rotate(6deg) translateY(-3px)}}
+.hw .ul{display:block;width:min(360px,70%);height:22px;margin:0 0 30px;overflow:visible}.hw .ul path{fill:none;stroke:var(--y);stroke-width:4;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}.hw.go .ul path{animation:draw .9s ease-out 1.3s forwards}@keyframes draw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.hw .t{clip-path:none!important;animation:none!important}.hw .pen{display:none}.hw .ul path{stroke-dashoffset:0;animation:none!important}}
+.hero::before{display:none}
+.yp{position:relative}.yp p{font:600 clamp(22px,2.2vw,28px)/1.45 "Dancing Script","Segoe Script","Brush Script MT",cursive;max-width:620px;color:#111}.yp.pre .wd{display:inline-block;clip-path:inset(-15% 100% -15% 0)}.yp.pre .wd.on{animation:wr .14s linear forwards}@keyframes wr{to{clip-path:inset(-15% 0 -15% 0)}}
+.pen2{position:absolute;left:0;top:0;width:30px;height:30px;margin:-26px 0 0 -4px;opacity:0;pointer-events:none;z-index:3;transition:transform .1s linear,opacity .3s;transform-origin:0 100%;animation:jig2 .16s ease-in-out infinite alternate;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 21l1.5-5L16 4.5 19.5 8 8 19.5z' fill='%23111' stroke='%23fff' stroke-width='1'/%3E%3Cpath d='M3 21l1.5-5 3.5 3.5z' fill='%23fff'/%3E%3C/svg%3E") center/contain no-repeat}@keyframes jig2{from{rotate:-7deg}to{rotate:5deg}}
 @media(max-width:980px){
  .plans,.grid3{grid-template-columns:1fr 1fr}.tri{grid-template-columns:1fr}.tri article{border-right:0;border-bottom:1px solid var(--b)}
  .sp,.ab,.ct,.pj,.pj:nth-child(even){grid-template-columns:1fr}.sl{min-height:520px}.yp{padding:64px 24px}.pj:nth-child(even) .th{order:0}.th{min-height:220px}.mons{opacity:.3;width:90%}
@@ -177,6 +194,11 @@ footer a:hover{color:var(--y)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.r{opacity:1;transform:none;transition:none}}
 @media(max-width:1000px){.plans{grid-template-columns:1fr;max-width:560px;margin:0 auto}.hero{min-height:auto}}
 @media(max-width:700px){.w{padding:0 18px}.bar{font-size:12px;padding:7px 10px;line-height:1.35}nav .w{height:56px}nav .logo{font-size:20px}.btn{padding:15px 26px}.hero{padding:140px 0 70px}.hero h1{font-size:clamp(38px,11.5vw,56px)}.lead{font-size:16px}.cta .btn{width:100%;text-align:center}.stats{gap:22px}.stats b{font-size:32px}h2{font-size:clamp(30px,9vw,44px)}.sx s{font-size:clamp(30px,10vw,46px)}.sx .big{font-size:clamp(56px,19vw,96px)}.sl{min-height:440px}.sts{left:16px;right:16px;bottom:18px;font-size:11px}.sts b{font-size:28px}.yp{padding:48px 20px}.tri article{padding:32px 22px}.sh{gap:14px;padding:20px 2px}.sh svg{width:24px;height:24px}.ch{padding:0 2px 24px}#pjs .pj{flex-basis:84vw}#pjs .pj .th{min-height:220px}.mt a{width:170px;padding:16px 14px}.mt b{font-size:20px}.pl{padding:30px 20px 24px}.pr{font-size:38px}form{padding:20px}.soc a{padding:12px 18px;font-size:16px}.fin h2{font-size:clamp(34px,10vw,52px)}footer .w{flex-direction:column}}
+img,svg,canvas{max-width:100%}.btn{min-height:44px}
+@media(max-width:860px){nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:4px;background:#151515;padding:16px 24px;border-bottom:1px solid var(--b);max-height:calc(100vh - 110px);overflow-y:auto}nav ul.o{display:flex}nav ul a{display:block;padding:10px 0;font-size:14px}#mb{display:block;min-height:40px}}
+@media(min-width:701px) and (max-width:1000px){.hero h1{font-size:clamp(52px,9vw,88px)}.sl{min-height:560px}.yp{padding:64px 40px}.w{padding:0 32px}}
+@media(max-width:420px){.btn{letter-spacing:.03em;padding:14px 20px}.stats{gap:16px}.stats b{font-size:28px}.stats span{font-size:12px}.note{padding:18px}.yp{padding:40px 16px}.sts{font-size:10px}.mt a{width:150px}.pl{padding:28px 16px 22px}.pr{font-size:34px}}
+@media(max-height:520px) and (orientation:landscape){.hero{padding:110px 0 50px;min-height:auto}.hero h1{font-size:clamp(34px,7vw,56px);margin:14px auto 16px}.cta{margin:20px 0 28px}section{padding:56px 0}.fin{padding:80px 0}.sl{min-height:360px}.yp{padding:44px 28px}nav .w{height:50px}.bar{padding:5px 10px}.w{padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}}
 </style>
 </head>
 <body>
@@ -201,7 +223,7 @@ footer a:hover{color:var(--y)}
 <div class="lab">What used to set you apart</div>
 <span class="cx d1">Templates</span><span class="cx d2">Page builders</span><span class="cx d3">Quick mockups</span>
 <div class="lab l2">Now one prompt away</div>
-<div class="big">Building</div>
+<div class="big" data-t="Building">Building</div>
 <p class="lead">That’s the part I love: turning an idea into something real.</p>
 </div></section>
 <section id="about" style="padding:0"><div class="sp">
@@ -316,6 +338,11 @@ for(var j=i+1;j<P.length;j++){var q=P[j],a=p.x-q.x,b=p.y-q.y,e=a*a+b*b;if(e<1400
 if(!rm)requestAnimationFrame(f)}
 rs();/*particles off*/addEventListener("resize",rs);c.parentNode.addEventListener("mousemove",function(e){var r=c.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});c.parentNode.addEventListener("mouseleave",function(){m.x=m.y=-999})})();
 var sx=document.querySelector(".sx");new IntersectionObserver(function(e,o){if(e[0].isIntersecting){sx.classList.add("go");o.disconnect()}},{threshold:.35}).observe(sx);
+(function(){var yp=document.querySelector(".yp"),ps=yp.querySelectorAll("p"),rm=matchMedia("(prefers-reduced-motion:reduce)").matches;if(rm)return;
+ps.forEach(function(p){p.innerHTML=p.textContent.trim().split(/\s+/).map(function(w){return'<span class="wd">'+w+'</span>'}).join(" ")});
+var words=yp.querySelectorAll(".wd"),pen=document.createElement("i");pen.className="pen2";pen.setAttribute("aria-hidden","true");yp.appendChild(pen);yp.classList.add("pre");
+function go(){var i=0;(function step(){if(i>=words.length){pen.style.opacity=0;return}var w=words[i++];w.classList.add("on");var a=w.getBoundingClientRect(),b=yp.getBoundingClientRect();pen.style.opacity=1;pen.style.transform="translate("+(a.right-b.left)+"px,"+(a.bottom-b.top-4)+"px)";setTimeout(step,16+Math.min(w.textContent.length*3,22))})()}
+new IntersectionObserver(function(e,o){if(e[0].isIntersecting){o.disconnect();go()}},{threshold:.3}).observe(yp)})();
 $("mb").onclick=function(){var o=$("menu").classList.toggle("o");this.setAttribute("aria-expanded",o)};
 $("menu").onclick=function(){this.classList.remove("o")};
 addEventListener("scroll",function(){$("nav").classList.toggle("s",scrollY>40)},{passive:true});
