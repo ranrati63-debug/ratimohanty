@@ -6,7 +6,7 @@
 <title>Rati Mohanty – Developer, Designer, Entrepreneur</title>
 <meta name="description" content="Personal portfolio of Rati Mohanty: websites, software, product design and digital growth.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,600;1,800&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,600;1,800&family=Dancing+Script:wght@600;700&family=Urbanist:wght@500;600;800&family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#151515;--bg2:#1C1C1C;--card:#212121;--y:#FFEC00;--t:#fff;--m:#929292;--b:#333;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *,*::before,*::after{box-sizing:inherit}
@@ -37,7 +37,7 @@ nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:13px;l
 nav ul a{color:#ccc;transition:color .2s}nav ul a:hover{color:var(--y)}
 #mb{display:none;background:none;border:1px solid var(--b);color:#fff;padding:8px 12px;font:600 12px Inter;text-transform:uppercase}
 /* hero */
-.hero{min-height:100vh;display:flex;align-items:center;padding:160px 0 90px;overflow:hidden;background:radial-gradient(ellipse 50% 40% at 15% 90%,rgba(80,110,255,.1),transparent 60%),var(--bg)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:160px 0 90px;overflow:hidden;background:var(--bg2)}
 .mons{position:absolute;right:-4%;top:14%;width:62%;height:68%;display:grid;grid-template-columns:1.1fr 1.6fr 1.1fr;gap:14px;transform:perspective(1200px) rotateY(-14deg);opacity:.55;pointer-events:none}
 .mons i{border:1px solid #3a3a3a;background:linear-gradient(160deg,#242424,#101010);position:relative;overflow:hidden}
 .mons i:nth-child(2){grid-row:span 2}
@@ -182,6 +182,14 @@ footer a:hover{color:var(--y)}
 .hero::before{display:none}
 .yp{position:relative}.yp p{font:600 clamp(22px,2.2vw,28px)/1.45 "Dancing Script","Segoe Script","Brush Script MT",cursive;max-width:620px;color:#111}.yp.pre .wd{display:inline-block;clip-path:inset(-15% 100% -15% 0)}.yp.pre .wd.on{animation:wr .14s linear forwards}@keyframes wr{to{clip-path:inset(-15% 0 -15% 0)}}
 .pen2{position:absolute;left:0;top:0;width:30px;height:30px;margin:-26px 0 0 -4px;opacity:0;pointer-events:none;z-index:3;transition:transform .1s linear,opacity .3s;transform-origin:0 100%;animation:jig2 .16s ease-in-out infinite alternate;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 21l1.5-5L16 4.5 19.5 8 8 19.5z' fill='%23111' stroke='%23fff' stroke-width='1'/%3E%3Cpath d='M3 21l1.5-5 3.5 3.5z' fill='%23fff'/%3E%3C/svg%3E") center/contain no-repeat}@keyframes jig2{from{rotate:-7deg}to{rotate:5deg}}
+#bgc{display:none}.hero::before{display:block;content:"";inset:auto;left:6%;top:12%;width:420px;height:420px;border-radius:50%;filter:blur(70px);background:rgba(255,255,255,.05);mix-blend-mode:normal;transform:none;animation:orb1 14s ease-in-out infinite alternate}.hero::after{inset:auto;right:4%;bottom:6%;width:480px;height:480px;border-radius:50%;filter:blur(70px);background:rgba(90,130,255,.13);animation:orb2 17s ease-in-out infinite alternate}@media(prefers-reduced-motion:reduce){.hero::before,.hero::after{animation:none}}
+.yp h2{font-family:"Swanky and Moo Moo","Segoe Script",cursive;font-weight:400;text-transform:none;letter-spacing:0;line-height:1.3;font-size:clamp(30px,4.2vw,56px)}
+.yp p{letter-spacing:.03em;word-spacing:.22em;line-height:1.75;margin:0 0 24px}.yp.pre .wd{margin-right:.04em}.yp h2{letter-spacing:.02em;word-spacing:.12em;line-height:1.45;margin-bottom:34px}.vc{margin-top:38px}
+.yp p{font:500 16px/1.6 Inter,system-ui,sans-serif;letter-spacing:0;word-spacing:0;margin:0 0 16px;max-width:560px;color:#111}.yp.pre .wd{margin-right:0}
+.yp h2{font-family:Oswald,"Bebas Neue",Impact,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.005em;word-spacing:0;line-height:1.1;font-size:clamp(32px,4vw,54px);margin-bottom:28px}
+.yp h2{font-family:Urbanist,Inter,sans-serif;font-weight:800;letter-spacing:-.01em;line-height:1.1}.yp p{font-family:Urbanist,Inter,sans-serif;font-weight:600;font-size:18px;line-height:1.6}
+.hero{min-height:92vh;padding-bottom:40px}.sx{padding-top:50px;padding-bottom:90px}
+.lead,.yp p,.tri p{font-family:Gilroy,Urbanist,sans-serif;font-size:24px;font-weight:400;line-height:34px}.yp p{max-width:none}.pj p,.pl li,.note span{font-family:Gilroy,Urbanist,sans-serif;font-size:17px;font-weight:400;line-height:26px}
 @media(max-width:980px){
  .plans,.grid3{grid-template-columns:1fr 1fr}.tri{grid-template-columns:1fr}.tri article{border-right:0;border-bottom:1px solid var(--b)}
  .sp,.ab,.ct,.pj,.pj:nth-child(even){grid-template-columns:1fr}.sl{min-height:520px}.yp{padding:64px 24px}.pj:nth-child(even) .th{order:0}.th{min-height:220px}.mons{opacity:.3;width:90%}
@@ -199,6 +207,8 @@ img,svg,canvas{max-width:100%}.btn{min-height:44px}
 @media(min-width:701px) and (max-width:1000px){.hero h1{font-size:clamp(52px,9vw,88px)}.sl{min-height:560px}.yp{padding:64px 40px}.w{padding:0 32px}}
 @media(max-width:420px){.btn{letter-spacing:.03em;padding:14px 20px}.stats{gap:16px}.stats b{font-size:28px}.stats span{font-size:12px}.note{padding:18px}.yp{padding:40px 16px}.sts{font-size:10px}.mt a{width:150px}.pl{padding:28px 16px 22px}.pr{font-size:34px}}
 @media(max-height:520px) and (orientation:landscape){.hero{padding:110px 0 50px;min-height:auto}.hero h1{font-size:clamp(34px,7vw,56px);margin:14px auto 16px}.cta{margin:20px 0 28px}section{padding:56px 0}.fin{padding:80px 0}.sl{min-height:360px}.yp{padding:44px 28px}nav .w{height:50px}.bar{padding:5px 10px}.w{padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}}
+@media(max-width:980px){.yp p{font-size:24px;line-height:34px}}@media(max-width:560px){.yp p{font-size:20px;line-height:30px}}
+@media(max-width:980px){.lead,.yp p,.tri p{font-size:20px;line-height:30px}}@media(max-width:560px){.lead,.yp p,.tri p{font-size:18px;line-height:27px}}
 </style>
 </head>
 <body>
@@ -342,7 +352,7 @@ var sx=document.querySelector(".sx");new IntersectionObserver(function(e,o){if(e
 ps.forEach(function(p){p.innerHTML=p.textContent.trim().split(/\s+/).map(function(w){return'<span class="wd">'+w+'</span>'}).join(" ")});
 var words=yp.querySelectorAll(".wd"),pen=document.createElement("i");pen.className="pen2";pen.setAttribute("aria-hidden","true");yp.appendChild(pen);yp.classList.add("pre");
 function go(){var i=0;(function step(){if(i>=words.length){pen.style.opacity=0;return}var w=words[i++];w.classList.add("on");var a=w.getBoundingClientRect(),b=yp.getBoundingClientRect();pen.style.opacity=1;pen.style.transform="translate("+(a.right-b.left)+"px,"+(a.bottom-b.top-4)+"px)";setTimeout(step,16+Math.min(w.textContent.length*3,22))})()}
-new IntersectionObserver(function(e,o){if(e[0].isIntersecting){o.disconnect();go()}},{threshold:.3}).observe(yp)})();
+new IntersectionObserver(function(e,o){if(e[0].isIntersecting){o.disconnect();go()}},{threshold:.05}).observe(yp)})();
 $("mb").onclick=function(){var o=$("menu").classList.toggle("o");this.setAttribute("aria-expanded",o)};
 $("menu").onclick=function(){this.classList.remove("o")};
 addEventListener("scroll",function(){$("nav").classList.toggle("s",scrollY>40)},{passive:true});
